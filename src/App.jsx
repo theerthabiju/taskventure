@@ -25,7 +25,7 @@ function App() {
         <Route path="/full-tasks" element={<FullTaskPage />} /> 
         <Route path="/calendar" element={<Calendar />} />
      <Route path="/Graphics" element={<Graphic/>} />
-     <Route path="/CompletedTasks" element={<CompletedTasks/>} />
+<Route path="/CompletedTasks/:id" element={<CompletedTasks />} />
           <Route path="/Manager" element={<ManagerApproval/>} />
        <Route path="/Client" element={<ClientApproval/>} />
      <Route path="/UserManagement" element={<UserManagement/>} />

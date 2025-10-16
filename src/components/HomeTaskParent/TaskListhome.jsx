@@ -89,12 +89,10 @@ const TaskListhome = ({
 
                   <td>
                     {task.upload ? (
-                      <Link
-                        to={`/completed-task/${task.id}`}
-                        className="view-file-link"
-                      >
-                        View File
-                      </Link>
+                   <Link to={`/CompletedTasks/${task.id}`} className="view-file-link">
+  View File
+</Link>
+
                     ) : (
                       <label className="upload-btn">
                         Upload
