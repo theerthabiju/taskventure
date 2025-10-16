@@ -218,7 +218,7 @@ const SecondNav = ({ onAddTask, onFilter }) => {
             <Button variant="secondary" onClick={handleClose}>
               Cancel
             </Button>
-            <Button onClick={handleSave}>Save Task</Button>
+            <Button onClick={handleSave} className="submitbttn">Save Task</Button>
           </Modal.Footer>
         </Modal>
       </div>

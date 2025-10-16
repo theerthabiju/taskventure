@@ -169,7 +169,7 @@ const Clientlist = () => {
             <Button variant="secondary" onClick={handleClose}>
               Cancel
             </Button>
-            <Button type="submit" variant="success">
+            <Button type="submit" className="submitbttn">
               {editClient ? "Save Changes" : "Add Client"}
             </Button>
           </Modal.Footer>
