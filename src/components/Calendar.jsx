@@ -3,7 +3,7 @@ import React from 'react'
 const Calendar = () => {
   return (
     <div>
-        <div className='mb-5 ' style={{ paddingTop: "100px" ,padding:"20px"  }}>
+        <div className='mb-5 mt-5 pt-5' style={{ paddingTop: "100px" ,padding:"20px"  }}>
       <iframe
         src="https://calendar.google.com/calendar/embed?src=your_calendar_id&ctz=Asia%2FKolkata"
         style={{
