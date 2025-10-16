@@ -27,7 +27,7 @@ const TaskListhome = ({
 
 
   const handleViewCorrections = (taskId) => {
-    navigate(`/correction/${taskId}`);
+    navigate(`/correction-details/${taskId}`);
   };
 
   const visibleTasks = isFullTaskPage
