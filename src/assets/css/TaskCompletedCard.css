@@ -1,0 +1,162 @@
+.task-card {
+  width: 350px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+.uploaded{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.task-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.correction-toast-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 10px 0;
+}
+
+.correction-toast {
+  background: #ff914d; 
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.task-info {
+  padding: 15px 20px;
+}
+
+.task-upload {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.task-designer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.designer-icon {
+  font-size: 22px;
+  margin-right: 10px;
+  color: #3F51B5;
+}
+
+.designer-name {
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0;
+}
+
+.designer-role {
+  font-size: 13px;
+  color: #777;
+  margin: 0;
+}
+
+.task-client,
+.task-deadline {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #444;
+}
+
+.task-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;               
+  margin-top: 15px;
+}
+
+.task-status .btn {
+  flex: 1;               
+  padding: 8px 0;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.3s;
+  text-align: center;
+  margin: 0;              
+}
+.image-preview-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3000;
+}
+
+.image-preview-container {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.image-preview {
+  width: 100%;
+  height: 700px;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+}
+
+.close-preview {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff4b5c;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.btn.correction {
+  background: #ff914d;
+}
+
+.btn.rejected {
+  background: #e63946;
+}
+
+.btn.approved {
+  background: #2ca02c;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}

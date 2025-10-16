@@ -1,0 +1,25 @@
+.hometaskrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 100px;
+    
+}
+body{
+    overflow-x: hidden;
+}
+.hometaskcol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 10px;
+    height: 250px;
+    width: 250px;
+}
+.bi-file-bar-graph-fill ,.bi-stopwatch-fill , .bi-check-circle-fill,  .bi-file-arrow-down-fill{
+font-size: 40px;
+color: #3F51B5;
+}

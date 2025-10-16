@@ -1,0 +1,141 @@
+.secondnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  margin: 20px;
+  border: 1px solid #3F51B5;
+  border-radius: 8px;
+  background-color: #fff;
+  flex-wrap: wrap; 
+  gap: 15px;
+}
+.createtaskmodalhead{
+  color: #2c3a8c;
+}
+.createtaskmodal{
+  background-color: #c9cff357;
+
+}
+.filter-btn{
+
+    background-color: #3F51B5;
+}
+.filter-btn:hover{
+background-color: #5967b6;
+}
+.filter-item{
+  padding: 5px;
+  color: #2c3a8c;
+}
+.createtaskmodal .modal-dialog {
+  max-width: 800px !important;
+  width: 800px !important;
+}
+
+.createtaskmodal .modal-body {
+  padding: 20px 30px;
+}
+.createtaskmodalinput:focus{
+ border-color: #3F51B5;
+  box-shadow: 0 0 6px rgba(63, 81, 181, 0.4);
+}
+
+.Contentname {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  flex: 1; 
+  min-width: 200px;
+}
+
+.searchbar {
+  flex: 2; 
+  min-width: 200px;
+  max-width: 500px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px 14px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.searchbar:focus {
+  border-color: #3F51B5;
+  box-shadow: 0 0 6px rgba(63, 81, 181, 0.4);
+}
+
+.searchbar::placeholder {
+  font-size: 13px;
+  color: #888;
+}
+
+.createtaskbtn {
+  background-color: #3F51B5;
+  border: none;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  white-space: nowrap; 
+}
+
+.createtaskbtn:hover {
+  background-color: #2c3a8c;
+}
+
+@media (max-width: 992px) {
+  .Contentname {
+    font-size: 20px;
+  }
+
+  .searchbar {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .secondnav {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 15px;
+  }
+
+  .Contentname {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .searchbar {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .createtaskbtn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .Contentname {
+    font-size: 16px;
+  }
+
+  .searchbar {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .createtaskbtn {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+}
+@media (max-width: 900px) {
+  .createtaskmodal .modal-dialog {
+    width: 95% !important;
+  }
+}

@@ -1,0 +1,17 @@
+.clientlist-container {
+  width: 90%;
+  margin: 40px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.client-table th {
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.client-table td {
+  vertical-align: middle;
+}

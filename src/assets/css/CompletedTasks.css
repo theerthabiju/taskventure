@@ -1,0 +1,20 @@
+.completed-section {
+  text-align: center;
+  padding: 100px ;
+  background: #ffffff;
+}
+
+.completed-title {
+  color: #3f51b5;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 30px;
+  text-align: start ;
+}
+
+.completed-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}

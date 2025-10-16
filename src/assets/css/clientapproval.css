@@ -1,0 +1,10 @@
+.client{
+    color: #3f51b5;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: start;
+    margin-bottom: 50px;
+}
+.client-approval-page{
+    padding: 100px;
+}

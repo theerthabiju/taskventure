@@ -1,0 +1,56 @@
+.assigned-container {
+  margin: 40px auto;
+  width: 90%;
+
+}
+
+.assigned-title {
+  color: #3f51b5;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.employee-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px;
+}
+
+
+.employee-card {
+  background: #f8f9ff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.employee-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.employee-avatar {
+  font-size: 45px;
+  color: #3f51b5;
+  margin-bottom: 10px;
+}
+
+.employee-name {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.employee-role {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.employee-task {
+  font-size: 15px;
+  font-weight: 500;
+  color: #3f51b5;
+}
