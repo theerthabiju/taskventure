@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import TaskListhome from "./HomeTaskParent/TaskListhome";
 import SecondNav from "../components/SecondNav";
 import "../assets/css/Tasklisthome.css";
-import Calendar from "./Calendar";
 import AssignedEmployees from "./Graphics/AssignedEmployees";
 import { Modal, Form, Button } from "react-bootstrap";
+import MyCalendar from "./MyCalendar";
 
 const FullTaskPage = () => {
   const [tasks, setTasks] = useState([]);
@@ -145,8 +145,8 @@ const FullTaskPage = () => {
         onViewCorrections={viewCorrections}
       />
 
-      <Calendar />
-      <AssignedEmployees employees={employees} />
+<MyCalendar/> 
+     <AssignedEmployees employees={employees} />
 
       <Modal show={showEditModal} onHide={() => setShowEditModal(false)} centered>
         <Modal.Header closeButton>

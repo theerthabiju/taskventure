@@ -1,8 +1,8 @@
 import React , {useState} from 'react'
 import TaskListhome from "../HomeTaskParent/TaskListhome";
 import SecondNav from "../SecondNav";
-import Calendar from "../Calendar";
 import AssignedEmployees from './AssignedEmployees';
+import MyCalendar from '../MyCalendar';
 
 
 
@@ -206,7 +206,7 @@ const Graphic = () => {
   onAssignCorrection={(taskId, points) => handleAddCorrection(taskId, points)}
 />
 
-            <Calendar/>
+<MyCalendar/>
       <AssignedEmployees employees={employeesData} />
 
     </div>

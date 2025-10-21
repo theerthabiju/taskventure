@@ -4,8 +4,8 @@ import TaskListhome from "./TaskListhome";
 import SecondNav from "../SecondNav";
 import "../../assets/css/Tasklisthome.css";
 import { Modal, Button, Form } from "react-bootstrap";
-import Calendar from "../Calendar";
 import Clientlist from "./Clientlist";
+import MyCalendar from "../MyCalendar";
 
 const TaskParent = () => {
   const [tasks, setTasks] = useState([
@@ -175,8 +175,7 @@ const handleAddTask = (newTask) => {
       />
 
 <Clientlist/>
-      <Calendar />
-
+<MyCalendar/>
       {/* Edit Task Modal */}
       <Modal show={showEditModal} onHide={() => setShowEditModal(false)} centered>
         <Modal.Header closeButton>

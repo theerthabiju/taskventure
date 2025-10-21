@@ -8,3 +8,11 @@
 .manager-approval-page{
     padding: 100px;
 }
+
+
+.feedback-section {
+  margin-top: 10px;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+}

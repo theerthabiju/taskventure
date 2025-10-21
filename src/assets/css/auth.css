@@ -1,0 +1,36 @@
+.auth-container {
+  max-width: 350px;
+  margin: 180px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.auth-container input,
+.auth-container select {
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+}
+.loginhead{
+ color: #3F51B5;
+
+}
+.auth-container button {
+  width: 100%;
+  background: #3F51B5;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: -5px;
+  text-align: left;
+  padding-left: 5px;
+}
