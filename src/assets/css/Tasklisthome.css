@@ -18,14 +18,14 @@
   font-weight: bold;
   color: #3f51b5;
 }
-td[class^="status-"] {
+/* td[class^="status-"] {
   text-transform: capitalize;
   font-weight: 500;
   text-align: center;
-  padding: 6px 10px;
+  padding: 10px 10px;
   border-radius: 12px;
   width: 130px; 
-}
+} */
 .savbtnn{
   background-color: #3f51b5;
 }
@@ -111,7 +111,7 @@ td[class^="status-"] {
 
 .task-table button {
   border: none;
-  padding: 4px 8px;
+  padding: 8px 8px;
   border-radius: 6px;
   cursor: pointer;
   background-color: #5b68af;
