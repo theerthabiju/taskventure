@@ -22,15 +22,15 @@ import MyCalendar from "./components/MyCalendar";
 function AppContent() {
   const location = useLocation();
 
-  const hideLayout = ["/login", "/register"].includes(location.pathname);
+  const hideLayout = ["/", "/register"].includes(location.pathname);
 
   return (
     <>
       {!hideLayout && <Navu />}
       <Routes>
-        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/" element={<TaskParent />} />
+        <Route path="/dashboard" element={<TaskParent />} />
         <Route path="/full-tasks" element={<FullTaskPage />} />
         <Route path="/calendar" element={<Calendar />} />
         <Route path="/Graphics" element={<Graphic />} />

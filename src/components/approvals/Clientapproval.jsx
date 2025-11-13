@@ -28,14 +28,14 @@ const ClientApproval = () => {
   }, []);
 
   const handleApprove = (task) => {
-    alert(`Task for client ${task.client} has been APPROVED ✅`);
+    alert(`Task for client ${task.client} has been APPROVED `);
     const updated = tasks.filter((t) => t.id !== task.id);
     setTasks(updated);
     localStorage.setItem("tasks", JSON.stringify(updated));
   };
 
   const handleReject = (task) => {
-    alert(`Task for client ${task.client} has been REJECTED ❌`);
+    alert(`Task for client ${task.client} has been REJECTED `);
     const updated = tasks.filter((t) => t.id !== task.id);
     setTasks(updated);
     localStorage.setItem("tasks", JSON.stringify(updated));
@@ -56,7 +56,7 @@ const ClientApproval = () => {
     <>
       <SecondNav />
       <div className="client-approval-page">
-        <h2 className="client">Client Work Progress</h2>
+        <h2 className="client">Work Progress</h2>
 
         {tasks.length === 0 ? (
           <p>No tasks available for review.</p>
@@ -69,16 +69,15 @@ const ClientApproval = () => {
                 <div className="task-details">
                   <h3>{task.title}</h3>
                   <p>
-                    <strong>Designer:</strong> {task.designer}
+                    <strong className="designername">Designer:</strong> {task.designer}
                   </p>
                   <p>
-                    <strong>Deadline:</strong> {task.deadline}
+                    <strong className="designername">Deadline:</strong> {task.deadline}
                   </p>
                   <p>
-                    <strong>Status:</strong> {task.status}
+                    <strong className="designername">Status:</strong> {task.status}
                   </p>
 
-                  {/* 🔵 Progress Bar */}
                   <div className="progress-container">
                     <div
                       className="progress-bar"
@@ -87,7 +86,6 @@ const ClientApproval = () => {
                   </div>
                   <p className="progress-text">{task.progress}% completed</p>
 
-                  {/* 💬 Comment Box */}
                   <div className="comment-section">
                     <h4>Client Comments</h4>
                     <ul>
@@ -105,7 +103,6 @@ const ClientApproval = () => {
                     <CommentInput taskId={task.id} onAdd={handleAddComment} />
                   </div>
 
-                  {/* ✅ / ❌ Buttons */}
                   <div className="btn-group">
                     <button
                       className="approve-btn"

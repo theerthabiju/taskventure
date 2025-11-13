@@ -1,46 +1,70 @@
-.client{
-    color: #3f51b5;
-    font-size: 28px;
-    font-weight: 700;
-    text-align: start;
-    margin-bottom: 50px;
-}
-.client-approval-page{
-    padding: 100px;
-}
-.client-approval-page {
-  padding: 20px;
+/* 🌟 General Page Styling */
+.client {
+  color: #3f51b5;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: start;
+  margin-bottom: 40px;
 }
 
+.client-approval-page {
+  padding: 100px 60px;
+  background-color: #f9fafc;
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* 🌟 Grid Layout */
 .task-card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  width: 100%;
 }
 
 .task-card {
   background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  padding: 15px;
+  padding: 18px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+.task-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .task-image {
   width: 100%;
-  border-radius: 8px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
+/* 🌟 Task Details */
 .task-details {
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
+.task-details h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+/* 🌟 Progress Bar */
 .progress-container {
   background: #eee;
   border-radius: 10px;
   height: 8px;
   width: 100%;
-  margin-top: 5px;
+  margin-top: 8px;
   overflow: hidden;
 }
 
@@ -54,61 +78,163 @@
 .progress-text {
   font-size: 0.85rem;
   color: #555;
+  margin-top: 4px;
 }
 
+/* 🌟 Comment Section */
 .comment-section {
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
-.comment-input {
-  display: flex;
-  gap: 6px;
-  margin-top: 5px;
-}
-
-.comment-input input {
-  flex: 1;
-  padding: 6px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.comment-input button {
-  padding: 6px 10px;
-  background: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.comment-section h4 {
+  margin-bottom: 6px;
+  font-size: 1rem;
+  color: #3f51b5;
 }
 
 .comment-item {
   background: #f7f7f7;
-  padding: 5px 8px;
+  padding: 6px 8px;
   border-radius: 6px;
   margin: 4px 0;
+  font-size: 0.9rem;
+  word-wrap: break-word;
 }
 
+.comment-input {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+  flex-wrap: wrap;
+}
+.designername{
+  color: #3f51b5;
+}
+.comment-input input {
+  flex: 1;
+  min-width: 180px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.comment-input button {
+  padding: 8px 12px;
+  background: #3f51b5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+}
+
+.comment-input button:hover {
+  background: #0056b3;
+}
+
+/* 🌟 Buttons */
 .btn-group {
-  margin-top: 10px;
+  margin-top: 14px;
   display: flex;
   justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.approve-btn,
+.reject-btn {
+  flex: 1;
+  color: white;
+  border: none;
+  padding: 10px 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
 }
 
 .approve-btn {
   background: #28a745;
-  color: white;
-  border: none;
-  padding: 6px 12px;
-  border-radius: 6px;
-  cursor: pointer;
 }
 
 .reject-btn {
   background: #dc3545;
-  color: white;
-  border: none;
-  padding: 6px 12px;
-  border-radius: 6px;
-  cursor: pointer;
+}
+
+.approve-btn:hover {
+  background: #218838;
+  transform: scale(1.03);
+}
+
+.reject-btn:hover {
+  background: #c82333;
+  transform: scale(1.03);
+}
+
+/* 🌟 Responsive Adjustments */
+
+/* 📱 Extra Small Devices (Phones ≤ 480px) */
+@media (max-width: 480px) {
+  .client-approval-page {
+    padding: 80px 16px;
+  }
+
+  .client {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .task-card {
+    padding: 14px;
+  }
+
+  .task-details h3 {
+    font-size: 1rem;
+  }
+
+  .comment-input {
+    flex-direction: column;
+  }
+
+  .comment-input button {
+    width: 100%;
+  }
+
+  .btn-group {
+    flex-direction: column;
+  }
+
+  .approve-btn,
+  .reject-btn {
+    width: 100%;
+  }
+}
+
+/* 📱 Medium Devices (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .client-approval-page {
+    padding: 90px 30px;
+  }
+
+  .client {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .task-card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+/* 💻 Large Devices (769px and above) */
+@media (min-width: 769px) {
+  .client-approval-page {
+    padding: 100px 60px;
+  }
+
+  .client {
+    text-align: start;
+  }
 }
